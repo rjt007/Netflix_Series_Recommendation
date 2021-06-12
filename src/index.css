@@ -1,13 +1,105 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family:"ubuntu","Raleway", sans-serif;
+  background-color: #d2dbdd;
+}
+h1{
+  width: 100vw;
+  height: 13vh;
+  padding: 3.5vh 0;
+  text-align:center;
+  font-family:"ubuntu","Raleway", sans-serif;
+  text-transform: 'uppercase';
+  letter-spacing: 2px;
+  font-weight:50px;
+  color:#868686;
+  background-color:#fff;
+  font-size: 2rem;
+  margin-bottom:2.5vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.maincard{
+  width:100vw;
+  height:auto;
+}
+
+.imgcard{
+  margin:6%;
+  transition:all 0.4s cubic-bezier(0.175, 0.885,0,1);
+  background-color:#fff;
+  width:21.25vw;
+  height: auto;
+  border-radius: 12px;
+  box-shadow:0 13px 10px -7px  rgba(0,0,0,0.1);
+  display: block;
+  float:left;
+}
+
+.imgcard:hover{
+  box-shadow:2px 30px 18px -8px rgba(0,0,0,0.1);
+  transform: scale(1.05,1.05);
+  cursor:pointer;
+}
+
+
+img{
+  width:100%;
+  height:335px;
+  border-radius: 12px;
+}
+
+.contentcard{
+  background-color:white;
+  border-radius: 12px;
+  padding:16px 24px 24px 24px;
+}
+
+.title{
+  font-family:"ubuntu","Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size:15px;
+  letter-spacing: 2px;
+  font-weight:10px;
+  color:#868686;
+  background-color:white;
+}
+
+.sname{
+  margin-top:5px;
+  background-color: white;
+  text-transform: capitalize;
+  font-family:"ubuntu","Raleway", sans-serif;
+  font-weight: 500px;
+}
+
+button{
+  margin-top: 5px;
+  padding: 5px 8px;
+  font-family:"Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size:13px;
+  letter-spacing: 1.5px;
+  font-weight:500;
+  color:#868686;
+  background-color:rgb(233, 228, 228);
+  outline:none;
+  border:1px solid black;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color:#99e4f5;
+  cursor:pointer;
+}
+
+
+@media(max-width:768px){
+  .imgcard{
+    float: none;
+    margin:5%;
+    width:90%;
+  }
 }
